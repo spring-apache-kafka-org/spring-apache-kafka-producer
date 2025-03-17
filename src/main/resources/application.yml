@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-apache-kafka-producer
+  kafka:
+    bootstrap-servers: "localhost:29092"
+server:
+  port: 8105
+  servlet:
+    context-path: /spring-apache-kafka-producer

@@ -1,0 +1,16 @@
+version: "3.9"
+configs: { }
+services:
+  spring-apache-kafka-producer:
+    container_name: ${serviceName}
+    environment: { }
+    image: ${serviceName}:${serviceVersion}
+    hostname: ${serviceName}
+    ports:
+      - 8105:8105
+    networks:
+      - apache-kafka-server-gateway-network
+networks:
+  apache-kafka-server-gateway-network:
+    name: apache-kafka-server-gateway-network
+    driver: bridge
